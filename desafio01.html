@@ -16,6 +16,10 @@
         h1 {
             margin: 0;
         }
+        
+        .bemvindo {
+            text-align: left;
+        }
 
         .container {
             padding: 20px;
@@ -26,10 +30,11 @@
             margin: 20px auto;
         }
 
-        .menu-item {
+        .pratos {
             background-color: #3498db;
             color: white;
-            padding: 10px;
+    
+            padding: 10px; 
             margin: 5px 0;
             border-radius: 5px;
             text-align: left;
@@ -37,8 +42,8 @@
 
         img {
             width: 300px;
-            border-radius: 10px;
             margin: 20px 0;
+            align: center;
         }
 
         .descricao {
@@ -53,7 +58,7 @@
         }
 
         table {
-            width: 60%;
+            width: 100%;
             margin: auto;
             border-collapse: collapse;
         }
@@ -74,20 +79,15 @@
 
 <header>
     <h1>Restaurante Japonês Sabor do Oriente</h1>
-    <p>Bem-vindo! Desfrute da autêntica culinária japonesa.</p>
+    <p class="bemvindo">Bem-vindo ao restaurante japonês Sabor do Oriente, onde você pode desfrutar da autêntica culinária japonesa.</p>
 </header>
 
-<div class="container">
-
     <h2>Pratos Populares:</h2>
-
-    <div class="menu">
-        <div class="menu-item">Sushi Variado</div>
-        <div class="menu-item">Sashimi</div>
-        <div class="menu-item">Temaki</div>
-        <div class="menu-item">Yakissoba</div>
-        <div class="menu-item">Missoshiro</div>
-    </div>
+    <p class="pratos">Sushi Variado</p>
+   <p class="pratos">Sashimi</p>
+   <p class="pratos">Temaki</p>
+   <p class="pratos">Yakissoba</p>
+   <p class="pratos">Missoshiro</p>
     <hr>
     <img src="imagens/sushizão.jpg" alt="Sushi">
 
@@ -99,26 +99,26 @@
             maki e temaki, todos preparados com cuidado e estética refinada.
         </p>
     </div>
-
+<hr>
     <div class="horario">
         <h2>Horários de Funcionamento:</h2>
 
         <table>
             <tr>
-                <th>Dia</th>
+                <th>Dia da semana</th>
                 <th>Horário</th>
             </tr>
             <tr>
-                <td>Segunda - Sexta</td>
-                <td>11:00 - 22:00</td>
+                <td>Segunda - Quinta</td>
+                <td>18:00 - 22:00</td>
             </tr>
             <tr>
-                <td>Sábado</td>
-                <td>12:00 - 23:00</td>
+                <td>Sexta - Sábado</td>
+                <td>18:00 - 23:00</td>
             </tr>
             <tr>
                 <td>Domingo</td>
-                <td>12:00 - 21:00</td>
+                <td>Fechado</td>
             </tr>
         </table>
     </div>
