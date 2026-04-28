@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício09</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Finger+Paint&display=swap');
+        body, html{
+            margin: 0;
+            padding: 0;
+            height: 100%;           
+        }
+        .cabe{
+            width: 100%;
+            height: 100px;
+            background-color: #e3e8dd;
+        }
+        input{
+            width: 20%;
+            height: 30px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+            border: solid rgb(1, 1, 1) 1.5px;
+            border-radius: 10px;
+            background-image: url(Imagem/64673.png);
+            background-size: 10%;
+            background-repeat: no-repeat;
+            background-position:  top 5px right 10px;
+            margin-top: 30px;
+            margin-right: 20px;
+            float: right;
+        }
+        .logo{
+            float: left;
+            text-indent: 20px;
+            width: 20%;
+        }
+        .cabe ul{
+            float: left;
+            width: 50%;
+            margin: 0px 0px 0px 20px;
+            line-height: 100px;
+            text-align: center;
+        }
+        .cabe ul li{
+            text-decoration: none;
+            display: inline;
+            padding: 20px;
+            color:  rgb(13, 66, 13); 
+            font-family: 'Finger Paint', cursive;
+            font-size: 1.5em;
+            cursor: pointer;
+        }
+        .cabe ul li:hover{
+            color:  rgb(55, 120, 31); 
+        }
+
+
+
+        
+        .box1, .box2, .box3, .box4{
+            position: relative;
+            height: 100%;
+            opacity: 0.7;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;        
+        } 
+        .box1{
+            background-image: url(Imagem/bAP.gif);
+        }
+        .box2{
+            background-image: url(Imagem/foto02.jpg);
+        }
+        .box3{
+            background-image: url(Imagem/foto03.jpg);
+        }
+        .box4{
+            background-image: url(Imagem/foto04.jpg);
+        }
+        
+        .cont-img{
+            position: absolute; /*serve para remover um elemento do fluxo normal do documento e posicioná-lo em um local exato, definido pelo desenvolvedor, em relação ao seu ancestral posicionado mais próximo.*/
+            top: 45%;
+            width: 100%;
+            text-align: center; /*centraliza o texto*/
+        }
+        .cont-img span.titulo{
+           background-color: rgb(13, 66, 13); /*altera a cor de fundo*/
+           color: #ffffff; /*muda a cor*/
+           padding: 20px;
+           font-size: 20px;
+           letter-spacing: 5px; /*serve para controlar o espaço horizontal entre os caracteres (letras) de um texto.*/     
+        }
+
+        .conteudo{
+            background-color: #e3e8dd;
+            color: rgb(13, 66, 13); 
+            text-align: justify; /*muda a posição do texto*/
+            padding: 50px 100px 40px 100px; 
+            background-image: url(Imagem/mold01.png); /*define a imagem como plano de fundo*/
+            background-repeat: no-repeat;
+            background-size: cover; /*ajusta a imagem para tomar todo o espaço*/
+            background-position: center; /*alinha ao centro*/
+        }
+
+        h2{
+            text-transform: uppercase; /* serve para converter automaticamente todo o texto de um elemento para letras maiúsculas (caixa alta) na exibição, independentemente de como foi digitado no HTML.*/
+            color: rgb(13, 66, 13); /*altera a cor do texto*/
+            text-align: center; /*centraliza o texto*/
+        }
+
+        .roda{
+            margin-top: -20px;
+            height: 330px; /*é a altura*/
+            background-color: #e3e8dd; /*altera a cor do fundo*/
+        }
+        .roda .down_up{
+            text-align: center; /*centraliza o texto*/
+            color:  rgb(13, 66, 13); /*altera a cor do texto*/
+            font-family: 'Finger Paint', cursive; /*altera a fonte do texto*/
+            font-size: 4em; /*altera o tamanho do texto*/
+        }
+        .roda .down_meio{
+            text-align: center; /*centraliza o texto*/
+            color:  rgb(13, 66, 13); /*altera a cor do texto*/
+            font-family: 'Finger Paint', cursive; /*altera a fonte do texto*/
+            font-size: 1.5em; /*altera o tamanho do texto*/
+            text-align: center; /*centraliza o texto*/
+        }
+        .roda .down_down{
+            text-align: center; /*centraliza o texto*/
+        }
+        .roda .down_down img{
+            width: 40px; /*define a altura*/
+            border-radius: 25px; /*arredonda os cantos*/
+            border: 4px rgb(13, 66, 13) dotted; /*muda a cor da borda*/
+            cursor: pointer; /*o cursor deixa de ser setinha e vira a maozinha*/
+            margin: 20px; /*define o tamanho da margem*/
+            padding: 5px; /*é o espaço entre o conteúdo e a borda*/
+        }
+        </style>
+</head>
+<body>
+     <div class="cabe">
+        <div class="logo">
+            <img src="Imagem/logo_natu (1).png">
+        </div>
+        <div>
+            <ul>
+                <li>HOME</li>
+                <li>SERVIÇOS</li>
+                <li>PRODUTOS</li>
+                <li>SOBRE</li>
+            </ul>
+        </div>
+        <input class="pesq" type="text" name="pesq" placeholder="Pesquisar">
+    </div>
+
+    <div class="box1">
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É REAL</span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates quia! Voluptates.</p>
+    </div>
+    <div class="box2">
+            <div class="cont-img">
+                <span class="titulo">NATUREZA É VIVA</span>
+            </div>
+    </div>
+    <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates quia! Voluptates.</p>
+    </div>
+    <div class="box3">
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É NOSSA</span>
+        </div>
+    </div>
+    <div class="conteudo">
+        <h2>Lorem Ipsum</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero esse necessitatibus quam quis ut, fugit soluta mollitia totam dicta exercitationem nobis maiores odio aliquam autem eius aliquid! Corrupti, dolore eaque?
+        </p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, deserunt sequi, temporibus maiores pariatur quisquam porro eligendi eius error adipisci qui corrupti iusto quod iure mollitia praesentium voluptates quia! Voluptates.</p>
+    </div>
+    <div class="box4">
+        <div class="cont-img">
+            <span class="titulo">NATUREZA É VIDA</span>
+        </div>
+    </div>
+
+    <div class="roda">
+        <br><br><br>
+        <div class="down_up">NATUREZA</div>
+        <div class="down_meio">Lorem ipsum dolor sit amet consectetur adipisicing elit
+            <br>#NATUREZA</div>
+        <div class="down_down">
+            <a href="https://pt-br.facebook.com/" target="_blank"><img src="Imagem/face_logo_01.png"></a>
+            <a href="https://web.whatsapp.com/" target="_blank"><img src="Imagem/whats_logo_01.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="Imagem/inst_logo_01.png"></a>
+        </div>
+    </div>
+</body>
+</html>
